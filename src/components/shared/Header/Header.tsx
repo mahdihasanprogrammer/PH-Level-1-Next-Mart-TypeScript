@@ -24,8 +24,8 @@ export default function Header() {
     { title: "Home", url: "/" },
     { title: "Products", url: "/products" },
     { title: "About", url: "/about" },
-    ...(user ? [{ title: "Manage Product", url: "/manage-product" }] : []),
-    ...(user ? [{ title: "Create Product", url: "/create-product" }] : []),
+    ...(user ? [{ title: "Manage Product", url: "/products/manage" }] : []),
+    ...(user ? [{ title: "Create Product", url: "/products/create" }] : []),
   ];
 
   const handleNavigation = (url: string) => {
