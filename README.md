@@ -1,36 +1,267 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Next Mart
 
-## Getting Started
+A modern e-commerce boilerplate built with **Next.js**, **TypeScript**, **Firebase Authentication**, and **shadcn/ui**. This project provides a clean foundation for building scalable e-commerce applications with authentication, protected routes, reusable UI components, and static product data.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+### Authentication
+
+- Firebase Authentication
+- Email & Password Login
+- Email & Password Registration
+- Google Sign-In
+- Protected Routes
+- Authentication Context
+- Logout
+
+### Product Management
+
+- Product Listing
+- Product Details
+- Featured Products Section
+- Static Product Data
+- Responsive Product Cards
+
+### Dashboard
+
+- Protected Dashboard
+- Add Product (Boilerplate)
+- Manage Products (Boilerplate)
+
+### UI
+
+- Responsive Design
+- Light & Dark Mode Ready
+- Built with shadcn/ui
+- Lucide Icons
+- Tailwind CSS
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- Next.js 15 (App Router)
+- React 19
+- TypeScript
+
+### Styling
+
+- Tailwind CSS
+- shadcn/ui
+- Lucide React
+
+### Authentication
+
+- Firebase Authentication
+
+### State Management
+
+- React Context API
+
+---
+
+## 📁 Project Structure
+
+```text
+src
+│
+├── app
+│   ├── (auth)
+│   │   ├── login
+│   │   └── signup
+│   │
+│   ├── (dashboard)
+│   │   └── dashboard
+│   │       ├── add-product
+│   │       └── manage-products
+│   │
+│   ├── about
+│   ├── products
+│   │   └── [id]
+│   └── api
+│
+├── components
+│   ├── auth
+│   ├── home
+│   ├── shared
+│   └── ui
+│
+├── data
+│   └── products.ts
+│
+├── firebase
+│
+├── hooks
+│
+├── providers
+│
+├── types
+│
+└── lib
+```
+
+---
+
+## 🔐 Authentication
+
+Implemented using Firebase Authentication.
+
+### Supported Methods
+
+- Email & Password Login
+- Email & Password Registration
+- Google Authentication
+
+Authentication state is managed globally using **React Context**.
+
+---
+
+## 🔒 Protected Routes
+
+The following pages require authentication:
+
+- Product Details
+- Dashboard
+- Add Product
+- Manage Products
+
+Protected routes are implemented using a reusable `ProtectedRoute` component.
+
+---
+
+## 📦 Pages
+
+### Public Pages
+
+- Home
+- About
+- Products
+- Login
+- Sign Up
+
+### Protected Pages
+
+- Product Details
+- Dashboard
+- Add Product
+- Manage Products
+
+---
+
+## 🛒 Current Features
+
+- Home Hero Section
+- Featured Products
+- Product Grid
+- Product Details
+- Authentication
+- Responsive Layout
+- About Page
+
+---
+
+## 🚧 Planned Features
+
+- Shopping Cart
+- Wishlist
+- Checkout
+- Order History
+- User Profile
+- Product Search
+- Product Categories
+- Product Filtering
+- Product Sorting
+- Reviews & Ratings
+- Admin Dashboard
+- Product CRUD
+- Cloud Storage
+- Payment Gateway
+- Backend API Integration
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env.local` file.
+
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
+```
+
+---
+
+## 📥 Installation
+
+Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📚 Learning Objectives
 
-To learn more about Next.js, take a look at the following resources:
+This project demonstrates:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js App Router
+- TypeScript
+- Firebase Authentication
+- Protected Routes
+- React Context API
+- Component-Based Architecture
+- Static Data Management
+- Responsive UI Design
+- Reusable Components
+- Modern Folder Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌿 Branches
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This repository maintains multiple project variants.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### `main`
+
+Contains the shared boilerplate and common project structure.
+
+### `ecommerce`
+
+Contains the complete e-commerce implementation.
+
+### `event-management`
+
+Contains the event management implementation built on the same foundation.
+
+---
+
+## 📄 License
+
+This project is intended for educational and learning purposes.
